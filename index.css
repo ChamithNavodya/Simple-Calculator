@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(221, 221, 221);
+}
+
+h1 {
+	font-size: 25px;
+}
+
+.cal {
+	max-width: 500px;
+	margin: 40px auto;
+	background-color: #535658;
+	padding: 20px 15px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px 1px #5356588e;
+}
+
+#display {
+	border-radius: 5px;
+	background-color: #eeeaea;
+	width: 70%;
+	height: 30px;
+	border: 2px solid #8d9194;
+	text-align: right;
+	padding: 5px;
+}
+
+.button {
+	background-color: #646c72;
+	border-radius: 3px;
+	border: 1px solid #7aa7c7;
+	box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+	box-sizing: border-box;
+	color: #d6d6d6;
+	cursor: pointer;
+	display: inline-block;
+	font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+		sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.15385;
+	margin: 0;
+	outline: none;
+	padding: 8px 0.8em;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+
+.buttons {
+	margin: 10px auto;
+	height: 60vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 0.2rem;
+	grid-template-areas:
+		"a b c d"
+		"e f g h"
+		"i j k h"
+		"l m n o"
+		"p p q o";
+}
+
+.btn-cle {
+	grid-area: a;
+}
+.btn-div {
+	grid-area: b;
+}
+.btn-mul {
+	grid-area: c;
+}
+.btn-sub {
+	grid-area: d;
+}
+.btn-1 {
+	grid-area: e;
+}
+.btn-2 {
+	grid-area: f;
+}
+.btn-3 {
+	grid-area: g;
+}
+.btn-4 {
+	grid-area: i;
+}
+.btn-5 {
+	grid-area: j;
+}
+.btn-6 {
+	grid-area: k;
+}
+.btn-7 {
+	grid-area: l;
+}
+.btn-8 {
+	grid-area: m;
+}
+.btn-9 {
+	grid-area: n;
+}
+.btn-sum {
+	grid-area: h;
+}
+.btn-equ {
+	grid-area: o;
+}
+.btn-0 {
+	grid-area: p;
+}
+.btn-poi {
+	grid-area: q;
+}
+
+@media only screen and (max-width: 500) {
+	.cal {
+		margin: 15px 0;
+	}
+}
